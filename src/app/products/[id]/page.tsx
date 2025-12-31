@@ -20,6 +20,14 @@ const product : ProductType = {
   },
 }
 
+
+export const generateMetadata  = ({params} : {params:{id:string}}) => {
+  return{
+  title:product.name,
+  description :product.description,
+  }
+}
+
 export default async function productPage({params,searchParams} : {params:Promise<{id:string}>,searchParams:Promise<{color:string,size:string}>}) {
     const {size,color} =await searchParams;
     const selectedColor = color|| (product.colors[0] as string);  
