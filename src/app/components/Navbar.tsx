@@ -8,7 +8,7 @@ import ShoppingCartIcon from './ShoppingCartIcon'
 export default function Navbar() {
   return (
     <nav className='w-full flex items-center justify-between border-b border-gray-200 pb-4 mb-2'>
-        <Link href='' className='flex items-center gap-2'>
+        <Link href='/' className='flex items-center gap-2'>
             <Image
             src='/logo (1).png'
             alt="logo"

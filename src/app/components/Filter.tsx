@@ -9,7 +9,7 @@ export default function Filter() {
       const router = useRouter();
       const pathname = usePathname();
     
-        const handleChange = (value :string | null) => {
+        const handleChange = (value :string) => {
           const params = new URLSearchParams(searchParams);
           params.set('sort',value);
           router.push(`${pathname}?${params.toString()}`,{scroll:false})
