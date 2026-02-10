@@ -1,3 +1,5 @@
+"use client"
+
 import { shippingFormInputs, shippingFormSchema } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ArrowRight } from 'lucide-react';
